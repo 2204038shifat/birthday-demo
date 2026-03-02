@@ -2,9 +2,31 @@ html {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  min-height: 100vh; */
+
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1, h2, h3, .wish-hbd {
+  font-family: 'Playfair Display', serif;
 }
 
 .song {
@@ -112,9 +134,35 @@ body {
   color: #333;
 }
 
-.text-box p {
-  margin: 0;
-  text-align: left;
+.text-box{
+  /* margin: 0;
+  text-align: left; */
+
+    background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+
+}
+
+p {
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.wish-hbd {
+  font-size: 2.5rem;
+}
+
+
+
+.wish-hbd span {
+  display: inline-block;  /* keeps spans inline for animation */
+  white-space: pre;       /* preserves spaces inside spans */
+}
+.gap {
+  margin-left: 0.4em;
 }
 
 .text-box span {
@@ -354,3 +402,4 @@ body {
     font-weight: lighter;
   }
 }
+
